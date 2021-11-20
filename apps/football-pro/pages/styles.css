@@ -26,6 +26,30 @@
   border-radius: 3px;
 }
 
+.app header ul {
+  list-style: none;
+}
+
+.app header ul li:hover {
+  background-color: #ffffff;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.app header ul li {
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+.app header a {
+  text-decoration: none;
+  color: #cae2ff;
+}
+
+.app header a:hover {
+  color: #0094ba;
+}
+
 .app main {
   padding: 0 36px;
 }

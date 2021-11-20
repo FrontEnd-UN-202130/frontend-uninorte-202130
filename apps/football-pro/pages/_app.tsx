@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import './styles.css';
+import {Ui} from '@frontend-uninorte-202130/ui'
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -9,11 +10,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <title>Welcome to football-pro!</title>
       </Head>
       <div className="app">
-        <header className="flex">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/nx-logo-white.svg" alt="Nx logo" width="75" height="50" />
-          <h1>Welcome to football-pro!</h1>
-        </header>
+        <Ui title={"Welcome to football-pro!"} showTitle={true} />
         <main>
           <Component {...pageProps} />
         </main>
