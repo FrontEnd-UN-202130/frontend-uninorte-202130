@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import Type from './type';
+import Types from './types';
 
-describe('Type', () => {
+describe('Types', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Type />);
+    const { baseElement } = render(<Types />);
     expect(baseElement).toBeTruthy();
   });
 });

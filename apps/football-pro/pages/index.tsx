@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-
+import Indexcarousel from '../components/indexcarousel/indexcarousel';
 const StyledPage = styled.div`
-  .page {
-  }
+
 `;
 
 export function Index() {
@@ -13,14 +12,19 @@ export function Index() {
    */
   return (
     <StyledPage>
-      <main>
+      <div className="main-container">
+        <div>
+        <main>
         <section>
           <article>
             <h2>Welcome to our new app Football-pro!</h2>
-            <p></p>
+            <p>Here you can find information about:</p>
           </article>
         </section>
       </main>
+      <Indexcarousel/>
+        </div>
+      </div>
     </StyledPage>
   );
 }

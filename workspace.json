@@ -3,7 +3,7 @@
   "projects": {
     "football-pro": "apps/football-pro",
     "football-pro-e2e": "apps/football-pro-e2e",
-    "type": "libs/type",
+    "types": "libs/types",
     "ui": "libs/ui"
   }
 }

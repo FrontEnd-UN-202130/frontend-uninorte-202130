@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styled from 'styled-components';
-import { UiProps } from '@frontend-uninorte-202130/type'
+import { UiProps } from '@frontend-uninorte-202130/types'
 
 
 const StyledUi = styled.div`

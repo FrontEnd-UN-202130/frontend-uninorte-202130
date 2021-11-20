@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@frontend-uninorte-202130/type": ["libs/type/src/index.ts"],
+      "@frontend-uninorte-202130/types": ["libs/types/src/index.ts"],
       "@frontend-uninorte-202130/ui": ["libs/ui/src/index.ts"]
     }
   },
