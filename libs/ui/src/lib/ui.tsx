@@ -8,22 +8,22 @@ const StyledUi = styled.div`
 `;
 
 export function Ui(props: UiProps) {
-  const {title, showTitle} = props;
+  const { title, showTitle } = props;
   return (
     <StyledUi>
       <header className="flex">
-          <div>
-            <h1>{showTitle && title}</h1>
-          </div>
-          <div>
-            <nav>
-                <ul>
-                  <li><Link href="/">Home</Link></li>
-                  <li><Link href="/countries">Countries</Link></li>
-                </ul>
-              </nav>
-          </div>
-        </header>
+        <div>
+          <h1>{showTitle && title}</h1>
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/countries">Countries</Link></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </StyledUi>
   );
 }
