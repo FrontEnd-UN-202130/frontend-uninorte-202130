@@ -20,8 +20,6 @@ export function Ui(props: UiProps) {
                 <ul>
                   <li><Link href="/">Home</Link></li>
                   <li><Link href="/countries">Countries</Link></li>
-                  <li><Link href="/teams">Teams</Link></li>
-                  <li><Link href="/players">Players</Link></li>
                 </ul>
               </nav>
           </div>

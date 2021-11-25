@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "data-mocks-api": "libs/data-mocks-api",
     "football-pro": "apps/football-pro",
     "football-pro-e2e": "apps/football-pro-e2e",
     "types": "libs/types",
