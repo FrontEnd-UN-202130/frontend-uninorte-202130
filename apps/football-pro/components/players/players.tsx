@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import DataTable from 'react-data-table-component';
+import Datatable from '../../components/datatable/datatable';
 import styled from 'styled-components';
 import { Player, PlayerResponse, Team } from '@frontend-uninorte-202130/types'
 import { sendingDataPlayers } from '@frontend-uninorte-202130/data-mocks-api';
@@ -29,7 +29,7 @@ const columns = [
   {
     name: 'Photo',
     // eslint-disable-next-line @next/next/no-img-element
-    cell: row => <img src={row.photo} alt="player-photo" width="130" />,
+    cell: row => <img src={row.photo} alt="player-photo" width="50" />,
   },
 ];
 
@@ -52,10 +52,10 @@ export function Players(props: PlayersProps) {
         isloading
           ?
           <p>Loading ...</p> :
-          <DataTable
+          <Datatable
+            title={`Players of ${teaminfo.name}`}
             columns={columns}
             data={players}
-            pagination
           />
       }
     </StyledCountries>

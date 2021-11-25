@@ -5,11 +5,10 @@ const StyledPage = styled.div`
     }
 `;
 
-export function Countries(){
-    return(
+export function Countries() {
+    return (
         <StyledPage>
-            <h2>Countries</h2>
-            <CountriesComponent/>
+            <CountriesComponent />
         </StyledPage>
     )
 }
