@@ -20,7 +20,7 @@ export interface TeamsProps {
 }
 
 export interface Player {
-  id: number
+  id: number;
   name: string;
   age: number;
   number: number | null;
@@ -28,8 +28,22 @@ export interface Player {
   photo: string;
 }
 
-
 export interface PlayerResponse {
-  team: Team,
+  team: Team;
   players: Array<Player>;
+}
+
+export interface TeamsResponse {
+  team: Team;
+  venue: Venue;
+}
+
+export interface Venue {
+  id: number;
+  name: string;
+  address: string;
+  city: string;
+  capacity: number;
+  surface: string;
+  image: string;
 }
