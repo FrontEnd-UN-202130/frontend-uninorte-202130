@@ -3,13 +3,13 @@ export interface UiProps {
   showTitle?: boolean;
 }
 
-export interface Country{
+export interface Country {
   name: string;
   code: string | null;
-  flag: string |null;
+  flag: string | null;
 }
 
-export interface Team{
+export interface Team {
   name: string;
   id: number;
   logo: string | null;
@@ -19,8 +19,8 @@ export interface TeamsProps {
   country: string;
 }
 
-export interface Player{
-  id:number
+export interface Player {
+  id: number
   name: string;
   age: number;
   number: number | null;
@@ -31,5 +31,5 @@ export interface Player{
 
 export interface PlayerResponse {
   team: Team,
-  players: Array<Player>; 
+  players: Array<Player>;
 }

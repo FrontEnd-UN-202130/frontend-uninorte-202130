@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import './styles.css';
-import {Ui} from '@frontend-uninorte-202130/ui'
+import { Ui } from '@frontend-uninorte-202130/ui'
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (

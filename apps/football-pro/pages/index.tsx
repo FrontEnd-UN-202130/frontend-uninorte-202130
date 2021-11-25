@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styled from 'styled-components';
 import Indexcarousel from '../components/indexcarousel/indexcarousel';
 const StyledPage = styled.div`
@@ -14,19 +15,19 @@ export function Index() {
     <StyledPage>
       <div className="main-container">
         <div>
-        <main>
-        <section>
-          <article>
-            <h2>Welcome to our new app Football-pro!</h2>
-            <p>Here you can find information about:</p>
-          </article>
-        </section>
-      </main>
-      <Indexcarousel/>
+          <main>
+            <section>
+              <article>
+                <h2>Welcome to our new app Football-pro!</h2>
+                <p>Here you can find information about:</p>
+              </article>
+            </section>
+          </main>
+          <Indexcarousel />
         </div>
       </div>
     </StyledPage>
   );
 }
 
-export default Index;
+export default Index
