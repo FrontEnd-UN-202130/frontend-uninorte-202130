@@ -1,0 +1,35 @@
+version: 2.1
+
+orbs:
+  heroku: circleci/heroku@0.0.10
+
+jobs:
+  test:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run:
+          name: Testing app
+          command: npm ci && npm run test
+
+  build:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run: npm install && npm run build
+
+workflows:
+  test-build-deploy:
+    jobs:
+      - test
+      - build:
+          requires:
+            - test
+      - heroku/deploy-via-git:
+          requires:
+            - build
+          filters:
+            branches:
+              only: main
