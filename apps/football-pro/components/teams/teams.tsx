@@ -1,10 +1,10 @@
-import { useState , useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
-import DataTable from 'react-data-table-component';
-import {sendingDataTeamsPerCountry} from '@frontend-uninorte-202130/data-mocks-api';
+import Datatable from '../../components/datatable/datatable';
+import { sendingDataTeamsPerCountry } from '@frontend-uninorte-202130/data-mocks-api';
 
-import {Team, TeamsProps} from '@frontend-uninorte-202130/types'
+import { Team, TeamsProps } from '@frontend-uninorte-202130/types'
 
 const StyledTeams = styled.div`
   color: pink;
@@ -12,13 +12,13 @@ const StyledTeams = styled.div`
 
 const columns = [
   {
-      name: 'Name',
-      selector: row => row.name,
+    name: 'Name',
+    selector: row => row.name,
   },
   {
     name: 'Logo',
     // eslint-disable-next-line @next/next/no-img-element
-    cell: row => <img src={row.logo} alt="contry-flag" width="130"/>,
+    cell: row => <img src={row.logo} alt="contry-flag" width="130" />,
   },
 ];
 
@@ -28,24 +28,27 @@ export function Teams(props: TeamsProps) {
   const router = useRouter();
   useEffect(() => {
     sendingDataTeamsPerCountry(props.country)
-    .then((data)=>{setTeams(data); setIsloading(false);} )
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+      .then((data) => { setTeams(data); setIsloading(false); })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
 
   return (
     <StyledTeams>
       {
-        isloading 
-        ?
-        <p>Loading data ... </p>
-        :
-        <DataTable
-        columns={columns}
-        data={teams}
-        pagination
-        onRowClicked ={rowData => router.push(`/players/${rowData.id}`
-        )}
-        />
+        isloading
+          ?
+          <p>Loading data ... </p>
+          :
+          <Datatable
+            title={`Teams of ${props.country}`}
+            columns={columns}
+            data={teams}
+            highlightOnHover
+            pointerOnHover
+            onRowClicked={rowData => router.push(`/players/${rowData.id}`
+            )}
+          />
       }
     </StyledTeams>
   );
