@@ -18,7 +18,7 @@ jobs:
       - image: circleci/node
     steps:
       - checkout
-      - run: npm install && npm run build
+      - run: npm install && NODE_OPTIONS=--openssl-legacy-provider npm run build
 
 workflows:
   test-build-deploy:
