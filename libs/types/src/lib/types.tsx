@@ -18,3 +18,18 @@ export interface Team{
 export interface TeamsProps {
   country: string;
 }
+
+export interface Player{
+  id:number
+  name: string;
+  age: number;
+  number: number | null;
+  position: string;
+  photo: string;
+}
+
+
+export interface PlayerResponse {
+  team: Team,
+  players: Array<Player>; 
+}
