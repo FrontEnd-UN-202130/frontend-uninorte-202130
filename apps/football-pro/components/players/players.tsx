@@ -7,7 +7,7 @@ import { sendingDataPlayers } from '@frontend-uninorte-202130/data-mocks-api';
 export interface PlayersProps { teamid: number }
 
 const StyledCountries = styled.div`
-  color: pink;
+  color: black;
 `;
 const columns = [
   {
@@ -40,8 +40,10 @@ export function Players(props: PlayersProps) {
   useEffect(() => {
     sendingDataPlayers(props.teamid)
       .then((data) => {
-        setPlayers(data.players);
-        setTeaminfo(data.team);
+        if (data) {
+          setPlayers(data.players);
+          setTeaminfo(data.team);
+        }
         setIsloading(false);
       })
   }, [])
@@ -52,11 +54,13 @@ export function Players(props: PlayersProps) {
         isloading
           ?
           <p>Loading ...</p> :
-          <Datatable
+          players.length > 0 ? <Datatable
             title={`Players of ${teaminfo.name}`}
             columns={columns}
             data={players}
           />
+            :
+            <h2> This team does not have any player</h2>
       }
     </StyledCountries>
   );
