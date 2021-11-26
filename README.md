@@ -20,7 +20,7 @@ npm run test
 
 - Local:
 
-<p style="text-align: center;"><img src="https://i.ibb.co/J7fJMCR/Captura-de-pantalla-2021-11-26-161601.png" width="450"></p>
+<p style="text-align: center;"><img src="https://i.ibb.co/J7fJMCR/Captura-de-pantalla-2021-11-26-161601.png" width="450" height="400></p>
 
 - CircleCi:
 <p style="text-align: center;"><img src="https://i.ibb.co/PWGYrT4/Captura-de-pantalla-2021-11-26-165701.png" width="450"></p>
