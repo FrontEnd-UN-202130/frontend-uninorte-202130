@@ -6,7 +6,7 @@
     "dev": "nx serve",
     "start": "next start dist/apps/football-pro",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test --verbose"
   },
   "private": true,
   "dependencies": {
