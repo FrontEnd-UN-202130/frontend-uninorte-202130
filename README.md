@@ -16,13 +16,8 @@ npm run start
 npm run test
 ```
 
-# App tested:
+# CircleCI:
 
-- Local:
-
-<p style="text-align: center;"><img src="https://i.ibb.co/J7fJMCR/Captura-de-pantalla-2021-11-26-161601.png" width="450" height="400></p>
-
-- CircleCi:
 <p style="text-align: center;"><img src="https://i.ibb.co/PWGYrT4/Captura-de-pantalla-2021-11-26-165701.png" width="450"></p>
 
 This project was generated using [Nx](https://nx.dev).
