@@ -22,7 +22,7 @@ npm run test
   !["local-test"](https://i.ibb.co/J7fJMCR/Captura-de-pantalla-2021-11-26-161601.png)
 
 - CircleCi:
-  ![](https://i.ibb.co/PWGYrT4/Captura-de-pantalla-2021-11-26-165701.png)
+  !["ci"](https://i.ibb.co/PWGYrT4/Captura-de-pantalla-2021-11-26-165701.png)
 
 This project was generated using [Nx](https://nx.dev).
 
