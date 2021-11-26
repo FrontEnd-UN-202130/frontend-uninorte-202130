@@ -4,7 +4,7 @@ import Datatable from './datatable';
 
 describe('Datatable', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Datatable />);
+    const { baseElement } = render(<Datatable columns={undefined} data={undefined} />);
     expect(baseElement).toBeTruthy();
   });
 });

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
 import Datatable from '../../components/datatable/datatable';
 import styled from 'styled-components';

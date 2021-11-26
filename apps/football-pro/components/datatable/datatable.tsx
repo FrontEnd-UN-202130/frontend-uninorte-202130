@@ -35,7 +35,6 @@ const customStyles = {
 };
 export function Datatable(props: DatatableProps) {
   const { columns, data, ...rest } = props;
-  console.log(rest)
   return (
     <DataTable
       columns={columns}

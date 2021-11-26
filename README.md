@@ -1,6 +1,28 @@
-
-
 # FrontendUninorte202130
+
+# App deployed in Heroku: [football-pro link](https://football-pro-frontend-202130.herokuapp.com/)
+
+# To run in local:
+
+```
+npm install
+npm run build
+npm run start
+```
+
+# Run test in local:
+
+```
+npm run test
+```
+
+# App tested:
+
+- Local:
+  !["local-test"](https://i.ibb.co/J7fJMCR/Captura-de-pantalla-2021-11-26-161601.png)
+
+- CircleCi:
+  ![](https://i.ibb.co/PWGYrT4/Captura-de-pantalla-2021-11-26-165701.png)
 
 This project was generated using [Nx](https://nx.dev).
 
@@ -78,8 +100,6 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
 
 ## ☁ Nx Cloud
 
