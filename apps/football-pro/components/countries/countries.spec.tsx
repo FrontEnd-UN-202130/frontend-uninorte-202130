@@ -11,4 +11,10 @@ describe('Countries', () => {
     expect(argentina).toBeInTheDocument();
     expect(baseElement).toBeTruthy();
   });
+
+  it('check images', async () => {
+    const { baseElement } = render(<Countries />);
+    const images = await screen.findAllByRole('img');
+    expect(images).not.toHaveLength(0);
+  });
 });

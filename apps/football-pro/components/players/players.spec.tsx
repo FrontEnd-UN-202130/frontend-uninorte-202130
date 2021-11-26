@@ -9,4 +9,10 @@ describe('Players', () => {
     expect(morales).toBeInTheDocument();
     expect(baseElement).toBeTruthy();
   });
+
+  it('check images players', async () => {
+    const { baseElement } = render(<Players teamid={434} />);
+    const images = await screen.findAllByRole('img');
+    expect(images).not.toHaveLength(0);
+  });
 });
